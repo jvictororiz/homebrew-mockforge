@@ -1,9 +1,9 @@
 cask "mockforge" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.7.12"
-  sha256 arm:   "d731763765016b69f3888d3aa9ff6da67bd1354f69731dd072eaf025b84b9493",
-         intel: "f8bf7439c44de3da9faf3cd724bef9058f143be594585e4e27b17433ae026833"
+  version "0.7.13"
+  sha256 arm:   "642c53389914dc02257e0863be66ed33deed4a5f92801c25f6053b601354fe8a",
+         intel: "2ae9d1e081b653c97fae9b967b42118f8fd59df0f3e335a9637b10b9a35ad5ab"
 
   url "https://github.com/jvictororiz/Mock-Forge/releases/download/v#{version}/MockForge-mac-#{arch}.dmg"
   name "MockForge"
