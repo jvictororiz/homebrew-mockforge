@@ -20,6 +20,12 @@ cask "mockforge" do
 
   app "MockForge.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MockForge.app"],
+                   must_succeed: false
+  end
+
   uninstall quit: "com.mockforge.app"
 
   zap trash: [
